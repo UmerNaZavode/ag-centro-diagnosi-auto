@@ -42,11 +42,13 @@
   a {
     position: relative;
     display: block;
-    margin: 0 6.4rem;
-    padding: 0;
-    font-size: 1.6rem;
-    color: #141414;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
     transition: all 0.6s;
+    letter-spacing: 0.24px;
+    margin: 0 3.2rem;
+    text-transform: uppercase;
 
     &::before {
       content: '';
@@ -58,7 +60,7 @@
       opacity: 0;
       transform: translateY(1rem);
       transition: all 0.4s;
-      background-color: black;
+      background-color: #fff;
     }
 
     &:hover {

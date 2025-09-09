@@ -23,8 +23,10 @@ body {
   font-family: var(--font-1);
   font-size: 1.8rem;
   color: var(--text-color);
+
   /* background: blue; */
-  padding-top: 97px;
+
+  /* padding-top: 97px; */
 
   &::after {
     content: '';
@@ -85,7 +87,7 @@ p {
 
 .container {
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1460px;
   padding: 0 10px;
 }
 

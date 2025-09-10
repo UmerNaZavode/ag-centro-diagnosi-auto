@@ -7,4 +7,5 @@ get_header();
 ?>
 <?php get_template_part("template-parts/home/home-intro"); ?>
 <?php get_template_part("template-parts/home/who-we-are"); ?>
+<?php get_template_part("template-parts/home/why-us"); ?>
 <?php get_footer(); ?>

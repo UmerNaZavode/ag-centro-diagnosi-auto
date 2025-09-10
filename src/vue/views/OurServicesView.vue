@@ -54,12 +54,14 @@ onMounted(() => {
         </div>
       </div>
     </div>
-    <OurServicesPopup
-      v-if="is_popup_open"
-      :title="popup_title"
-      :text="popup_text"
-      @emit_close="emitClose"
-    />
+    <Transition name="fade">
+      <OurServicesPopup
+        v-if="is_popup_open"
+        :title="popup_title"
+        :text="popup_text"
+        @emit_close="emitClose"
+      />
+    </Transition>
   </div>
 </template>
 
@@ -72,5 +74,19 @@ onMounted(() => {
     grid-template-columns: repeat(auto-fill, minmax(34rem, 1fr));
     gap: 1rem;
   }
+}
+
+/* popup fade transition */
+.fade-enter-active,
+.fade-leave-active {
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform: scale(1.3);
 }
 </style>

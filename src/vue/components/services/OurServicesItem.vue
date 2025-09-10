@@ -27,11 +27,12 @@ function onClick() {
   <div
     class="our-services-item"
     :class="{ 'our-services-item--first': index === 0 }"
+    @click="onClick"
   >
     <img :src="item?.image" class="our-services-item__img" alt="" />
     <div class="our-services-item__inner">
       <h3 class="our-services-item__subtitle">{{ item?.title }}</h3>
-      <button @click="onClick" class="our-services-item__btn">
+      <button class="our-services-item__btn">
         <IPlus />
       </button>
     </div>

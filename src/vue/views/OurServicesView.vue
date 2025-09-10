@@ -4,19 +4,27 @@ import { axiosInstance } from '../utils/axios-instances';
 import { TItem, TOurServicesResponse } from '../types/TOurServicesResponse';
 import OurServicesItem from '../components/services/OurServicesItem.vue';
 import OurServicesPopup from '../components/services/OurServicesPopup.vue';
+import LoadingComponent from '../components/LoadingComponent.vue';
 
+const loading = ref(false);
 const services = ref<TItem[]>([]);
 const is_popup_open = ref(false);
 const popup_title = ref('');
 const popup_text = ref('');
 
 async function getData() {
-  const response = await axiosInstance.get('/api/v1/services');
-  // console.log(response);
+  loading.value = true;
+  try {
+    const response = await axiosInstance.get('/api/v1/services');
 
-  const data = response.data as TOurServicesResponse;
-  console.log(data);
-  services.value = data.our_services.items;
+    const data = response.data as TOurServicesResponse;
+    console.log(data);
+    services.value = data.our_services.items;
+  } catch (error) {
+    console.log(error);
+  } finally {
+    loading.value = false;
+  }
 }
 
 function emitIndex(index: number) {
@@ -40,7 +48,8 @@ onMounted(() => {
 <template>
   <div class="our-services">
     <div class="container">
-      <div class="our-services__wrap" v-if="services && services.length">
+      <LoadingComponent v-if="loading" />
+      <div class="our-services__wrap" v-else-if="services && services.length">
         <div
           class="our-services__item"
           v-for="(item, index) in services"
@@ -53,6 +62,7 @@ onMounted(() => {
           />
         </div>
       </div>
+      <div v-else>No data</div>
     </div>
     <Transition name="fade">
       <OurServicesPopup

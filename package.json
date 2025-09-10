@@ -16,7 +16,8 @@
     "preview": "npm-run-all --parallel sync watch",
     "clean": "rm -rf node_modules && rm -f yarn.lock && rm package-lock.json && rm pnpm-lock.yaml",
     "restart": "yarn clean && yarn install && yarn dev",
-    "format:scss": "npx stylelint '**/*.scss' --fix"
+    "format:scss": "npx stylelint '**/*.scss' --fix",
+    "type:check": "vue-tsc --noEmit"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",

@@ -2,7 +2,7 @@
 
 // Exit if accessed directly
 if (!defined('ABSPATH'))
-    exit;
+  exit;
 
 $vite_dev = true;
 
@@ -12,7 +12,7 @@ include "inc/inc.vite.php";
 // include_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/src/vue/vue-functions.php';
 
-// require_once __DIR__ . '/Api/call-api.php';
+require_once __DIR__ . '/api/our-services-api.php';
 // require_once __DIR__ . '/Api/single-immobile-meta.php';
 // require_once __DIR__ . '/inc/Custom_Walker_Nav_Menu.php';
 require_once __DIR__ . '/inc/class-tgm-plugin-activation.php';
@@ -34,8 +34,9 @@ require_once __DIR__ . '/shortcodes/email.php';
 /* require_once __DIR__ . '/inc/ar-taxonomy.php'; */
 /* require_once __DIR__ . '/inc/activate-plugin.php'; */
 
-add_filter( 'acfwpcli_fieldgroup_paths', 'add_plugin_path' );
-function add_plugin_path( $paths ) {
-    $paths['my_plugin'] = get_template_directory() . '/acf/';
-    return $paths;
-  }
+add_filter('acfwpcli_fieldgroup_paths', 'add_plugin_path');
+function add_plugin_path($paths)
+{
+  $paths['my_plugin'] = get_template_directory() . '/acf/';
+  return $paths;
+}

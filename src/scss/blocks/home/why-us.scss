@@ -28,9 +28,9 @@
     top: 1.6rem;
     left: 1.6rem;
     display: block;
-    z-index: 1;
     font-size: 3.2rem;
     font-weight: 500;
+    z-index: 1;
     letter-spacing: -0.128rem;
   }
 
@@ -57,9 +57,9 @@
 
   &__icon {
     display: flex;
-    padding: 4px;
     align-items: center;
-    border-radius: 32px;
+    padding: 4px;
     border: 1px solid var(--accent);
+    border-radius: 32px;
   }
 }

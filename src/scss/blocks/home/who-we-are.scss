@@ -24,8 +24,8 @@
     }
 
     @media screen and (max-width: 992px) {
-      padding-block: 3.2rem;
       gap: 6.4rem;
+      padding-block: 3.2rem;
 
       &::before {
         content: '';
@@ -57,9 +57,9 @@
     }
 
     @media screen and (max-width: 992px) {
-      padding-block: 0;
       flex-direction: column;
       gap: 2rem;
+      padding-block: 0;
     }
   }
 
@@ -73,8 +73,8 @@
     padding-block: 3.2rem;
 
     @media screen and (max-width: 1200px) {
-      gap: 1rem;
       max-width: 60rem;
+      gap: 1rem;
     }
 
     @media screen and (max-width: 992px) {

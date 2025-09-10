@@ -24,7 +24,7 @@
   }
 
   &.our-services-item--first {
-    background-color: red;
+    background-color: #f44;
     .our-services-item {
       &__img {
         top: initial;
@@ -77,5 +77,9 @@
     border: none;
     border-radius: 32px;
     background: var(--accent);
+
+    &--red {
+      background: #f44;
+    }
   }
 }

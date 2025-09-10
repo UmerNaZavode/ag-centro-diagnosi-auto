@@ -13,8 +13,9 @@
 @use 'blocks/blog/single-blog-styles';
 @use 'blocks/globals/form';
 @use 'blocks/globals/btn';
-@use "blocks/home/home-intro";
-@use "blocks/home/who-we-are";
-@use "blocks/globals/button";
-@use "blocks/home/why-us";
-@use "blocks/vue/services/our-services";
+@use 'blocks/home/home-intro';
+@use 'blocks/home/who-we-are';
+@use 'blocks/globals/button';
+@use 'blocks/home/why-us';
+@use 'blocks/vue/services/our-services';
+@use 'blocks/vue/services/our-services-popup';

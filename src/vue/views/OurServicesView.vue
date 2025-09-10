@@ -3,6 +3,7 @@ import { onMounted, ref } from 'vue';
 import { axiosInstance } from '../utils/axios-instances';
 import { TItem, TOurServicesResponse } from '../types/TOurServicesResponse';
 import OurServicesItem from '../components/services/OurServicesItem.vue';
+import OurServicesPopup from '../components/services/OurServicesPopup.vue';
 
 const services = ref<TItem[]>([]);
 
@@ -33,6 +34,7 @@ onMounted(() => {
         </div>
       </div>
     </div>
+    <OurServicesPopup />
   </div>
 </template>
 

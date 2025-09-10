@@ -1,4 +1,5 @@
-// import {createApp} from "vue";
+import { createApp } from 'vue';
+import OurServicesView from './views/OurServicesView.vue';
 // import MainSearch from "./components/MainSearch.vue";
 // import SimpleComponent from "./components/SimpleComponent.vue";
 // import MainApp from "./views/MainApp.vue";
@@ -6,11 +7,11 @@
 // createVueApp('#homeFilter', 'home-filter', HomeFilter);
 // createVueApp("#myId", SimpleComponent);
 // createVueApp("#mainApp", MainApp);
-// createVueApp("#singleAdd", SingleAdd);
+createVueApp("#ourServices", OurServicesView);
 
-// function createVueApp(id: string, component) {
-//     if (document.querySelector(id)) {
-//         const app = createApp(component);
-//         app.mount(id);
-//     }
-// }
+function createVueApp(id: string, component) {
+  if (document.querySelector(id)) {
+    const app = createApp(component);
+    app.mount(id);
+  }
+}

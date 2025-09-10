@@ -4,7 +4,7 @@
   /* display: flex; */
 
   /* align-items: center; */
-  height: 91.2rem;
+  max-height: 91.2rem;
 
   &__img-bg {
     position: absolute;
@@ -21,8 +21,29 @@
     position: relative;
     display: flex;
     justify-content: center;
-    height: 91.2rem;
     flex-direction: column;
+    padding-block: 3.2rem;
+
+    @media screen and (max-width: 1550px) {
+      padding-block: 0;
+    }
+
+    @media screen and (max-width: 992px) {
+      padding-block: 3.2rem;
+      gap: 2rem;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #013358;
+        z-index: -1000;
+      }
+    }
   }
 
   &__content {
@@ -33,11 +54,17 @@
 
     &:nth-child(even) {
       flex-direction: row-reverse;
+
+      @media screen and (max-width: 992px) {
+        flex-direction: column;
+      }
     }
 
-    /* @media screen and (max-width: 1200px) { */
-    /*    */
-    /* } */
+    @media screen and (max-width: 992px) {
+      padding-block: 0;
+      flex-direction: column;
+      gap: 2rem;
+    }
   }
 
   &__left {
@@ -48,6 +75,16 @@
     max-width: 69.6rem;
     flex-direction: column;
     padding-block: 3.2rem;
+
+    @media screen and (max-width: 1200px) {
+      gap: 1rem;
+      max-width: 60rem;
+    }
+
+    @media screen and (max-width: 992px) {
+      max-width: 69.6rem;
+      padding-block: 0;
+    }
   }
 
   &__title {
@@ -66,6 +103,10 @@
     strong {
       font-weight: 500;
     }
+
+    @media screen and (max-width: 992px) {
+      max-width: none;
+    }
   }
 
   &__text {
@@ -77,6 +118,10 @@
 
     strong {
       font-weight: 500;
+    }
+
+    @media screen and (max-width: 992px) {
+      max-width: none;
     }
   }
 

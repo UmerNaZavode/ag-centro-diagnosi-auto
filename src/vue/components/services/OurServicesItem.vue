@@ -3,6 +3,8 @@ import { PropType, ref } from 'vue';
 import { TItem } from '../../types/TOurServicesResponse';
 import IPlus from '../../icons/IPlus.vue';
 
+const emits = defineEmits(['emit_index']);
+
 const props = defineProps({
   item: {
     type: Object as PropType<TItem>
@@ -12,7 +14,13 @@ const props = defineProps({
   }
 });
 
-const isOpen = ref(false);
+function onClick() {
+  if (props.index === 0) {
+    console.log('1');
+  } else {
+    emits('emit_index', props.index);
+  }
+}
 </script>
 
 <template>
@@ -23,7 +31,7 @@ const isOpen = ref(false);
     <img :src="item?.image" class="our-services-item__img" alt="" />
     <div class="our-services-item__inner">
       <h3 class="our-services-item__subtitle">{{ item?.title }}</h3>
-      <button @click="isOpen = true" class="our-services-item__btn">
+      <button @click="onClick" class="our-services-item__btn">
         <IPlus />
       </button>
     </div>

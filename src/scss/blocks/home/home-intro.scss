@@ -1,5 +1,4 @@
 .home-intro {
-  display: flex;
   position: relative;
   height: 90rem;
 
@@ -15,31 +14,35 @@
   }
 
   &__inner {
-    position: relative;
     display: flex;
+    justify-content: flex-end;
+    position: relative;
   }
 
   &__wrapper {
-    width: 69.6rem;
-    height: auto;
-    margin-right: auto;
-    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    padding-block: 9.6rem;
+    margin-top: 53.1rem;
   }
 
   &__subtitle {
     font-size: 2.4rem;
     font-weight: 400;
-    letter-spacing: -0.96px;
+    letter-spacing: -0.096rem;
+    max-width: 69.6rem;
   }
 
   &__title {
     font-size: 4.8rem;
     font-weight: 500;
-    letter-spacing: -1.92px;
+    letter-spacing: -0.192rem;
+    max-width: 69.6rem;
 
-    @media screen and (max-width: 576px) {
-      font-size: 5rem;
-      margin-top: 2rem;
+    @media screen and (max-width: 768px) {
+      font-size: 4rem;
     }
   }
 }

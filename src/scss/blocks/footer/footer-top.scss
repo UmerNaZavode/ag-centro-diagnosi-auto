@@ -15,11 +15,12 @@
   &__wrapper {
     position: relative;
     display: flex;
+    align-items: center;
     gap: 4.8rem;
     padding-block: 9.6rem;
 
-    @media screen and (max-width: 992px) {
-      flex-direction: column;
+    @media screen and (max-width: 1200px) {
+      flex-direction: column-reverse;
     }
 
     @media screen and (max-width: 768px) {
@@ -29,6 +30,10 @@
 
   &__left {
     max-width: 67.2rem;
+
+    @media screen and (max-width: 1200px) {
+      max-width: 720px;
+    }
   }
 
   &__title {

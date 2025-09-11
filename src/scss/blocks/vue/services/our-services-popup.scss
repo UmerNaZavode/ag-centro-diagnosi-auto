@@ -20,24 +20,33 @@
     z-index: 1;
   }
 
+  &__wrapper {
+    padding-inline: 10px;
+  }
+
   &__inner {
     position: relative;
-    max-width: 640px;
-    padding: 48px;
-    background: rgb(0, 56, 96, 80%);
-    border-radius: 16px;
+    max-width: 64rem;
+    padding: 4.8rem;
+    background: rgb(0, 56, 96, 65%);
+    border-radius: 1.6rem;
     z-index: 2;
     backdrop-filter: blur(16px);
+
+    @media screen and (max-width: 768px) {
+      padding: 2.4rem;
+    }
   }
 
   &__header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 4.8rem;
   }
 
   &__title {
-    max-width: 474px;
+    max-width: 47.4rem;
   }
 
   &__description {

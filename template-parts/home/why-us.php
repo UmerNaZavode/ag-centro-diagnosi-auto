@@ -20,7 +20,7 @@ $items = $why_us['items'];
           ?>
           <li class="why-us__item">
             <div class="why-us__icon"><?php get_template_part('template-parts/icons/icon-check-circle'); ?></div>
-          <h4 class="why-us__subtitle"><?php echo $subtitle; ?></h4>
+            <h4 class="why-us__subtitle"><?php echo $subtitle; ?></h4>
           </li>
         <?php endforeach; ?>
       </ul>

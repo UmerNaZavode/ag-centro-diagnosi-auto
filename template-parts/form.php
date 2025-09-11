@@ -1,6 +1,4 @@
-<?php $footer = get_field('main_footer', 'option'); ?>
-<div class="form main-footer__form">
-    <div class="main-footer__label">Scrivici</div>
-    <div class="main-footer__value">Ti risponderemo il prima<br> possibile!</div>
-    <?php echo do_shortcode($footer['form_shortcode']); ?>
+<div class="form footer-top__left">
+  <h2 class="footer-top__title">Contattaci</h2>
+  <?php echo do_shortcode('[contact-form-7 id="eab2cd4" title="Contact form 1"]'); ?>
 </div>

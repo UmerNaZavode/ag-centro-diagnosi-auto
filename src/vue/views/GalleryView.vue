@@ -2,13 +2,18 @@
 import { onMounted, ref } from 'vue';
 import { axiosInstance } from '../utils/axios-instances';
 import { TTGalleryResponse } from '../types/TGalleryResponse';
+import Paginate from '../components/Paginate.vue';
 
 const gallery = ref<TTGalleryResponse['gallery']>([]);
+const current_page = ref(1);
+const total_pages = ref(0);
+const gallery_items = ref<string[]>([])
 
 async function getData() {
   const response = await axiosInstance.get('/api/v1/gallery');
   const data = response.data as TTGalleryResponse;
   gallery.value = data.gallery;
+  const gallery_length = gallery.value.length
 }
 
 onMounted(() => {
@@ -27,6 +32,7 @@ onMounted(() => {
         <img :src="item" alt="" />
       </div>
     </div>
+    <Paginate />
   </div>
 </template>
 

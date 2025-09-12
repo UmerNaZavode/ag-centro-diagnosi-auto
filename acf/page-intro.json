@@ -1,0 +1,141 @@
+[
+    {
+        "ID": false,
+        "key": "group_kmd8jrp4f5txr",
+        "title": "Page Intro",
+        "fields": [
+            {
+                "key": "field_mqusivgh701r7",
+                "label": "Page Intro",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 100,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "ui": 0,
+                "default_value": 0,
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_8p1hn4lmwphv9",
+                "label": "Page Intro",
+                "name": "page_intro",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 100,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "ui": 0,
+                "default_value": 0,
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_xasff9fmk2per",
+                        "label": "Image",
+                        "name": "image",
+                        "aria-label": "",
+                        "type": "image",
+                        "instructions": "",
+                        "required": true,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 33,
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "ui": 0,
+                        "default_value": 0,
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": 0,
+                        "min_height": 0,
+                        "min_size": 0,
+                        "max_width": 0,
+                        "max_height": 0,
+                        "max_size": 0,
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_f0fixkt0lzsv7",
+                        "label": "Label",
+                        "name": "label",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": true,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 33,
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "ui": 0,
+                        "default_value": 0,
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_ikikyoxfzuy1m",
+                        "label": "Title",
+                        "name": "title",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": true,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 33,
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "ui": 0,
+                        "default_value": 0,
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page",
+                    "operator": "==",
+                    "value": 613
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "_valid": true
+    }
+]

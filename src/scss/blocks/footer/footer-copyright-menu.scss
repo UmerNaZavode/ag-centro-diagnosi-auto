@@ -1,0 +1,13 @@
+.footer-copyright-menu {
+  display: flex;
+  gap: 3.2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 140%;
+  color: #141414;
+
+  li:last-child {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 3.2rem;
+  }
+}

@@ -142,12 +142,12 @@
                         "label": "Hours",
                         "name": "hours",
                         "aria-label": "",
-                        "type": "text",
+                        "type": "repeater",
                         "instructions": "",
                         "required": 0,
                         "conditional_logic": 0,
                         "wrapper": {
-                            "width": "33",
+                            "width": 100,
                             "class": "",
                             "id": ""
                         },
@@ -155,7 +155,38 @@
                         "maxlength": "",
                         "placeholder": "",
                         "prepend": "",
-                        "append": ""
+                        "append": "",
+                        "min": 0,
+                        "max": 0,
+                        "rows_per_page": 20,
+                        "layout": "table",
+                        "button_label": "Add Row",
+                        "collapsed": "",
+                        "sub_fields": [
+                            {
+                                "key": "field_yudyr9npsvjsy",
+                                "label": "Item",
+                                "name": "item",
+                                "aria-label": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": true,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": 100,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "message": "",
+                                "ui": 0,
+                                "default_value": 0,
+                                "maxlength": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "parent_repeater": "field_exnievog0ejqa"
+                            }
+                        ]
                     },
                     {
                         "key": "field_ibgrr4yduu5zu",

@@ -6,7 +6,7 @@ import { mainMenu } from "./modules/menu";
 document.addEventListener("DOMContentLoaded", function () {
   mainMenu();
   fixedHeader();
-  // streetMap();
+  streetMap();
 });
 
 // function isChromeOnAppleDevice() {

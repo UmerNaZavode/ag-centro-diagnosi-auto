@@ -65,24 +65,6 @@
                         "preview_size": "medium"
                     },
                     {
-                        "key": "field_4zieg5p4vcbd0",
-                        "label": "Logo Scroll",
-                        "name": "logo_scroll",
-                        "aria-label": "",
-                        "type": "image",
-                        "instructions": "",
-                        "required": true,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": 50,
-                            "class": "",
-                            "id": ""
-                        },
-                        "message": "",
-                        "ui": 0,
-                        "default_value": 0
-                    },
-                    {
                         "key": "field_jexxifucq4o3s",
                         "label": "Items",
                         "name": "items",
@@ -169,6 +151,31 @@
                         "placeholder": "",
                         "prepend": "",
                         "append": ""
+                    },
+                    {
+                        "key": "field_4zieg5p4vcbd0",
+                        "label": "Logo Scroll",
+                        "name": "logo_scroll",
+                        "aria-label": "",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "",
+                        "preview_size": "medium"
                     }
                 ]
             }

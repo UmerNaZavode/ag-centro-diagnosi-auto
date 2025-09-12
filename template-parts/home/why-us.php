@@ -10,7 +10,7 @@ $items = $why_us['items'];
   <div class="why-us__wrapper container">
     <div class="why-us__left">
       <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="why-us__img" />
-      <h2 class="why-us__title"><?php echo $title; ?></h2>
+      <h3 class="why-us__title"><?php echo $title; ?></h3>
     </div>
     <div class="why-us__right">
       <ul class="why-us__list">

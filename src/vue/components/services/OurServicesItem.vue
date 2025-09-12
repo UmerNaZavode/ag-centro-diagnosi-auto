@@ -31,7 +31,10 @@ function onClick() {
   >
     <img :src="item?.image" class="our-services-item__img" alt="" />
     <div class="our-services-item__inner">
-      <h3 class="our-services-item__subtitle">{{ item?.title }}</h3>
+      <h2 v-if="index === 0" class="our-services-item__subtitle">
+        {{ item?.title }}
+      </h2>
+      <h3 v-else class="our-services-item__subtitle">{{ item?.title }}</h3>
       <button class="our-services-item__btn" :class="{ btn: index === 0 }">
         <span v-if="index === 0">Contattaci ora</span>
         <IPlus v-else />

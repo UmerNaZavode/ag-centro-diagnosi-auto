@@ -9,8 +9,8 @@ $title = $home_intro['title'];
   <div class="blur"></div>
   <div class="home-intro__inner container">
     <div class="home-intro__wrapper">
-      <h3 class="home-intro__label"><?php echo $subtitle; ?></h3>
-      <h1 class="home-intro__title"><?php echo $title; ?></h2>
+      <h1 class="home-intro__label"><?php echo $subtitle; ?></h1>
+      <h3 class="home-intro__title"><?php echo $title; ?></h3>
     </div>
   </div>
 </div>

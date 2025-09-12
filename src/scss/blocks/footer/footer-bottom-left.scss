@@ -1,0 +1,7 @@
+.footer-bottom-left {
+  width: 100%;
+  flex: 0 0 50%;
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 6.4rem;
+  }
+}

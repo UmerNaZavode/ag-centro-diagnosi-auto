@@ -1,11 +1,22 @@
 .footer-bottom-right {
   width: 100%;
+  flex: 0 0 50%;
+  padding-left: 3.2rem;
+
+  @media screen and (max-width: 576px) {
+    padding-left: 0;
+  }
 
   &__header {
     display: flex;
     justify-content: space-between;
     align-items: start;
     margin-bottom: 3.2rem;
+
+    @media screen and (max-width: 1200px) {
+      justify-content: center;
+      gap: 6.4rem;
+    }
 
     .footer-bottom-right__label {
       margin-bottom: 0.4rem;
@@ -32,11 +43,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 1200px) {
+      justify-content: center;
+      gap: 6.4rem;
+    }
+
+    @media screen and (max-width: 576px) {
+      flex-direction: column;
+      gap: 3.2rem;
+    }
   }
 
   &__left {
-    width: 100%;
-    max-width: 35rem;
+    padding-right: 1rem;
   }
 
   &__contact {
@@ -61,7 +81,6 @@
     border-radius: 1.6rem;
     background: rgba(0, 0, 0, 0.05);
     height: 32.4rem;
-    // height: 100%;
   }
 
   &__hours {

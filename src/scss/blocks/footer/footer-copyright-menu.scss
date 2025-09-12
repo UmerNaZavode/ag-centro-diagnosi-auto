@@ -6,8 +6,29 @@
   line-height: 140%;
   color: #141414;
 
+  @media screen and (max-width: 576px) {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
   li:last-child {
-    border-left: 1px solid rgba(0, 0, 0, 0.1);
     padding-left: 3.2rem;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+
+    @media screen and (max-width: 576px) {
+      padding: 0;
+      border: none;
+    }
+  }
+
+  li.current-menu-item a {
+    text-decoration: underline;
+  }
+
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

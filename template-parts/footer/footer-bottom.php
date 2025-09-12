@@ -31,7 +31,7 @@ $address_text = $map['address_text'];
       </span>
       <span id="map-icon" style="display: none;"><?php echo $map_icon; ?></span>
       <span id="map-zoom" style="display: none;"><?php echo $zoom; ?></span>
-      <div id="map" style="height: 47rem; width: 72rem;"></div>
+      <div id="map" style="height: 47rem; width: 100%;"></div>
     </div>
     <div class="footer-bottom-right">
       <header class="footer-bottom-right__header">

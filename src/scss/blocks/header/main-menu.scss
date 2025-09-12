@@ -31,10 +31,7 @@
   li {
     &.current-menu-item {
       a {
-        &::before {
-          opacity: 1;
-          transform: translateY(0);
-        }
+        color: var(--accent);
       }
     }
   }
@@ -50,24 +47,8 @@
     letter-spacing: 0.24px;
     text-transform: uppercase;
 
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 0.2rem;
-      opacity: 0;
-      transform: translateY(1rem);
-      transition: all 0.4s;
-      background-color: #fff;
-    }
-
     &:hover {
-      &::before {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      color: var(--accent);
     }
   }
 }

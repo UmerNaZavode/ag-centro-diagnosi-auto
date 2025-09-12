@@ -119,3 +119,7 @@ button::-moz-focus-inner {
   opacity: 0;
   pointer-events: none;
 }
+
+.mfp-wrap {
+  z-index: 1000000;
+}

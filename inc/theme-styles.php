@@ -1,7 +1,7 @@
 <?php
 
 // wp_enqueue_style('ag_centro_diagnosi_auto-lightgallery-css', get_template_directory_uri() . '/assets/libs/lightgallery.js/dist/css/lightgallery.min.css');
-// wp_enqueue_style('ag_centro_diagnosi_auto-magnific-css', get_template_directory_uri() . '/assets/libs/magnific-popup/magnific-popup.css');
+wp_enqueue_style('ag_centro_diagnosi_auto-magnific-css', get_template_directory_uri() . '/assets/libs/magnific-popup/magnific-popup.css');
 wp_enqueue_style('ag_centro_diagnosi_auto-slick-css', get_template_directory_uri() . '/assets/libs/slick/slick.css');
 wp_enqueue_style('ag_centro_diagnosi_auto-leaflet-css', get_template_directory_uri() . '/assets/libs/leaflet/leaflet.css');
 // wp_enqueue_style('ag_centro_diagnosi_auto-style', get_stylesheet_uri());

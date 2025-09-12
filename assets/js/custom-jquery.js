@@ -37,12 +37,11 @@ jQuery(document).ready(function ($) {
     ]
   });
 
-
   // add id to tag a js-referrer
   const js_referrer = document.querySelector('#js-referrer');
-  const expectedReferral = "https://bludelego.it";
+  const expectedReferral = 'https://bludelego.it';
   const referringURL = document.referrer;
-  console.log(referringURL, "referringURL");
+  console.log(referringURL, 'referringURL');
 
   if (referringURL.indexOf(expectedReferral) !== -1) {
     const img = `<img src="https://bludelego.it/downloads/color-bludelego.svg" alt="">`;
@@ -51,21 +50,20 @@ jQuery(document).ready(function ($) {
     js_referrer.insertAdjacentHTML('afterbegin', img);
   }
 
-
-  const gallery = document.querySelector(".gallery-grid__wrap");
+  const gallery = document.querySelector('.home-gallery__wrapper');
   if (gallery) {
-    $(".gallery-grid__item").magnificPopup({
-      type: "image",
+    $('.home-gallery__item').magnificPopup({
+      type: 'image',
       gallery: {
-        enabled: true,
+        enabled: true
       },
       removalDelay: 300,
-      mainClass: "mfp-fade mfp-with-zoom",
+      mainClass: 'mfp-fade mfp-with-zoom',
       zoom: {
         enabled: true, // By default it's false, so don't forget to enable it
 
         duration: 300, // duration of the effect, in milliseconds
-        easing: "ease-in-out", // CSS transition easing function
+        easing: 'ease-in-out', // CSS transition easing function
 
         // The "opener" function should return the element from which popup will be zoomed in
         // and to which popup will be scaled down
@@ -73,11 +71,11 @@ jQuery(document).ready(function ($) {
         opener: function (openerElement) {
           // openerElement is the element on which popup was initialized, in this case its <a> tag
           // you don't need to add "opener" option if this code matches your needs, it's defailt one.
-          return openerElement.is("img")
+          return openerElement.is('img')
             ? openerElement
-            : openerElement.find("img");
-        },
-      },
+            : openerElement.find('img');
+        }
+      }
     });
   }
 });

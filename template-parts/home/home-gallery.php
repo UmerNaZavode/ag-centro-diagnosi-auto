@@ -10,9 +10,9 @@ $button_text = $home_gallery['button_text'];
       $image = $item['image'];
       $width = $item['width'];
       ?>
-      <div class="home-gallery__item cl-<?php echo $width; ?>">
-        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-      </div>
+      <a href="<?php echo $image['url']; ?>" class="home-gallery__item cl-<?php echo $width; ?>">
+        <img src=" <?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+      </a>
     <?php endforeach; ?>
   </div>
   <footer class="home-gallery__footer">

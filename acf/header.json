@@ -65,6 +65,24 @@
                         "preview_size": "medium"
                     },
                     {
+                        "key": "field_4zieg5p4vcbd0",
+                        "label": "Logo Scroll",
+                        "name": "logo_scroll",
+                        "aria-label": "",
+                        "type": "image",
+                        "instructions": "",
+                        "required": true,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "ui": 0,
+                        "default_value": 0
+                    },
+                    {
                         "key": "field_jexxifucq4o3s",
                         "label": "Items",
                         "name": "items",

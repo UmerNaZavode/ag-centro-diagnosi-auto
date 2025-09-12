@@ -33,6 +33,15 @@
     height: 8rem;
   }
 
+  &__icon {
+    svg {
+      rect,
+      path {
+        fill: white;
+      }
+    }
+  }
+
   &.active {
     position: fixed;
     top: 0;
@@ -44,12 +53,37 @@
     z-index: 1000;
     background-color: white;
 
+    .main-menu a {
+      color: #003860;
+    }
+
+    .main-header__phone {
+      color: #003860;
+    }
+
+    .main-header__icon {
+      svg {
+        rect,
+        path {
+          fill: var(--accent);
+        }
+      }
+    }
+
     .sandwitch-wrap {
       top: 0;
     }
 
     .main-header__cart-icon {
       top: 1rem;
+    }
+
+    .logo__scroll {
+      display: block;
+    }
+
+    .logo__fixed {
+      display: none;
     }
   }
 
@@ -96,5 +130,9 @@
     display: flex;
     color: #fff;
     gap: 1.2rem;
+  }
+
+  .logo__scroll {
+    display: none;
   }
 }

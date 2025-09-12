@@ -14,6 +14,7 @@
     <?php
     $header = get_field('header', 'option');
     $logo = $header['logo'];
+    $logo_scroll = $header['logo_scroll'];
     $footer = get_field('footer', 'option');
     $phone_number = $footer['phone_number'];
     ?>
@@ -21,10 +22,12 @@
       <div class="logo">
         <?php if ($logo) : ?>
           <?php if (is_front_page()) : ?>
-            <img src="<?php echo $logo; ?>" alt="">
+            <img src="<?php echo $logo; ?>" alt="" class="logo__fixed">
+            <img src="<?php echo $logo_scroll; ?>" alt="" class="logo__scroll">
           <?php else : ?>
             <a href="<?php echo home_url(); ?>">
-              <img src="<?php echo $logo; ?>" alt="">
+              <img src="<?php echo $logo; ?>" alt="" class="logo__fixed">
+              <img src="<?php echo $logo_scroll; ?>" alt="" class="logo__scroll">
             </a>
           <?php endif; ?>
         <?php endif; ?>

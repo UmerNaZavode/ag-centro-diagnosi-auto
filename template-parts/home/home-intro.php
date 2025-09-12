@@ -6,6 +6,7 @@ $title = $home_intro['title'];
 ?>
 <div class="home-intro">
   <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+  <div class="blur"></div>
   <div class="home-intro__inner container">
     <div class="home-intro__wrapper">
       <h3 class="home-intro__label"><?php echo $subtitle; ?></h3>

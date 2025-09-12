@@ -2,7 +2,15 @@
   position: relative;
   height: 90rem;
   background: rgb(0, 0, 0, 1%);
-  backdrop-filter: blur(8px);
+
+  .blur {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 31%; /* Нижние 20% */
+    backdrop-filter: blur(3px); /* Размытие */
+  }
 
   @media screen and (max-width: 576px) {
     height: 60rem;
@@ -23,19 +31,16 @@
     position: relative;
     display: flex;
     justify-content: flex-end;
+    height: 100%;
   }
 
   &__wrapper {
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     gap: 3.2rem;
-    margin-top: 53.1rem;
     padding-block: 9.6rem;
-
-    @media screen and (max-width: 576px) {
-      margin-top: 21.5rem;
-    }
   }
 
   &__subtitle {

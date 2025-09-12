@@ -17,8 +17,9 @@
     $logo_scroll = $header['logo_scroll'];
     $footer = get_field('footer', 'option');
     $phone_number = $footer['phone_number'];
+    $header_class = get_the_ID() === 3 ? 'main-header--dark' : null;
     ?>
-    <header class="main-header">
+    <header class="main-header <?php echo $header_class; ?>">
       <div class="logo">
         <?php if ($logo) : ?>
           <?php if (is_front_page()) : ?>

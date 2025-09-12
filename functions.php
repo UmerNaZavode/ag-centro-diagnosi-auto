@@ -13,6 +13,7 @@ include "inc/inc.vite.php";
 require_once __DIR__ . '/src/vue/vue-functions.php';
 
 require_once __DIR__ . '/api/our-services-api.php';
+require_once __DIR__ . '/api/gallery-api.php';
 // require_once __DIR__ . '/Api/single-immobile-meta.php';
 // require_once __DIR__ . '/inc/Custom_Walker_Nav_Menu.php';
 require_once __DIR__ . '/inc/class-tgm-plugin-activation.php';

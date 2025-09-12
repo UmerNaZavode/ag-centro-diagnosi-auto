@@ -138,13 +138,17 @@
     }
   }
 
+  .wpcf7-response-output {
+    border-color: var(--accent) !important;
+  }
+
   .wpcf7-not-valid-tip {
     position: absolute;
     left: 1rem;
     bottom: -3rem;
     display: block;
     font-size: 1.4rem;
-    color: #003860;
+    color: var(--accent);
   }
 
   input[type='submit'] {

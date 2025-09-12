@@ -83,7 +83,7 @@
     line-height: 1.8rem;
 
     .wpcf7-list-item {
-      margin: 0;
+      margin: 0 0 3.2rem 0;
     }
 
     .wpcf7-list-item-label {
@@ -95,6 +95,10 @@
 
       @media screen and (max-width: 992px) {
         text-align: left;
+      }
+
+      @media screen and (max-width: 576px) {
+        padding-right: 0;
       }
 
       &::before {

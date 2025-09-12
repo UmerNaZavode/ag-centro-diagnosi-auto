@@ -4,6 +4,10 @@
   background: rgb(0, 0, 0, 1%);
   backdrop-filter: blur(8px);
 
+  @media screen and (max-width: 576px) {
+    height: 60rem;
+  }
+
   img {
     position: absolute;
     top: 0;
@@ -28,6 +32,10 @@
     gap: 3.2rem;
     margin-top: 53.1rem;
     padding-block: 9.6rem;
+
+    @media screen and (max-width: 576px) {
+      margin-top: 21.5rem;
+    }
   }
 
   &__subtitle {

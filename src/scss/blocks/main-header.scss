@@ -29,6 +29,10 @@
     height: 8rem;
   }
 
+  @media screen and (max-width: 576px) {
+    padding: 0 3.2rem;
+  }
+
   &__icon {
     svg {
       rect,

@@ -32,6 +32,10 @@
     transform: rotate(-45deg);
   }
 
+  &--active .sandwitch__line {
+    background-color: #003860;
+  }
+
   &__line {
     position: absolute;
     left: 0;

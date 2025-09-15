@@ -19,8 +19,8 @@
   height: 8rem;
   background: transparent;
   z-index: 1000;
+  border-bottom: 1px solid rgb(255, 255, 255, 15%);
   padding-inline: 24rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 
   @media screen and (max-width: 1200px) {
     padding: 0 6rem;

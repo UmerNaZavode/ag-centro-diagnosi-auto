@@ -1,10 +1,10 @@
 .footer-copyright-menu {
   display: flex;
-  gap: 3.2rem;
   font-size: 1.4rem;
   font-weight: 400;
-  line-height: 140%;
   color: #141414;
+  gap: 3.2rem;
+  line-height: 140%;
 
   @media screen and (max-width: 576px) {
     justify-content: center;
@@ -13,8 +13,8 @@
   }
 
   li:last-child {
+    border-left: 1px solid rgb(0, 0, 0, 10%);
     padding-left: 3.2rem;
-    border-left: 1px solid rgba(0, 0, 0, 0.1);
 
     @media screen and (max-width: 576px) {
       padding: 0;
